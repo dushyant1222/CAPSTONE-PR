@@ -1,0 +1,484 @@
+/*font*/
+@font-face {
+    font-size: BebasNeue-Regular;
+    src: url(../font/font-family: )'Bebas Neue', sans-serif;.ttf;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+/* styles.css */
+#map {
+    height: 100vh;
+    width: 100%;
+}
+
+.leaflet-popup-content {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-size: BebasNeue-Regular;
+}
+
+/*body*/
+body {
+    margin: 0;
+    scroll-behavior: smooth;
+    padding: 0;
+}
+
+.uni-padding {
+    padding: 0 7%;
+}
+
+
+
+
+.sing-in-page a {
+    width: 5px;
+    height: 10px;
+    position: relative;
+    right: 1px;
+
+}
+
+ button {
+    position: relative;
+    background:transparent;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    color: white;
+   
+    
+
+}
+
+/*nav bar*/
+header {
+    /* background-color: #2C4C9C; */
+    background: url('BG images/HBG.jpg');
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+   
+}
+nav{
+    position: fixed;
+    width: 100%;
+
+}
+nav ul{
+    list-style: none;
+    /* background: rgb(0, 0, 0); */
+    overflow: hidden;
+    color: rgb(255, 255, 255);
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    transition: 1s;
+}
+nav ul li{
+    display: inline-block;
+    padding: 20px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+nav.blue ul{
+    background: #2C4C9C;
+}
+
+#aboutContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    flex-direction: column;
+    background-color: white;
+    position: relative;
+    width: 60vw ;
+    margin: auto;
+    height: 600px;
+    top: 100px;
+}
+
+#aboutContainer h1 {
+    font-size: 50px;
+    color: #0d0303;
+    position: relative ;
+    text-align: center;
+    top: -235px;
+
+}
+
+#aboutContainer p {
+    font-size: 18px;
+    text-align: center;
+    color: #0d0303;
+    position: relative;
+    top: -200px;
+}
+
+#why_us {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #080808;
+    flex-direction: column;
+    background-color: rgb(199, 227, 247);
+    position: relative;
+    width: 40vw;
+    margin: auto;
+    height: auto; 
+    top: 100px;
+}
+
+#why_us h1 {
+    font-size: 40px;
+    color: #0d0303;
+    position: fixed 
+    text-align: center;
+    top: -235px;
+}
+
+#why_us .box {
+    background-color: #568198;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 600px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#why_us .box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#why_us .box p {
+    font-size: 16px;
+}
+
+
+#why_us .box:hover{
+    background-color: rgb(254, 4, 13);
+}
+
+#teamContainer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #080808;
+    flex-direction: column;
+    background-color: rgb(199, 227, 247);
+    position: relative;
+    width: auto;
+    margin: auto;
+    height: auto; 
+    top: 100px;
+}
+
+#teamContainer h1 {
+    font-size: 40px;
+    color: #0d0303;
+    position: fixed 
+    text-align: center;
+    top: -235px;
+}
+
+#teamContainer .box {
+    background-color: #568198;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 600px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#teamContainer .box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#teamContainer .box p {
+    font-size: 16px;
+}
+
+#teamContainer .box:hover{
+    background-color: rgb(255, 57, 2);
+}
+
+#poster {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    flex-direction: column;
+}
+
+#poster h1 {
+    font-size: 50px;
+    color: #0d0303;
+    position: relative;
+    top: -10px;
+    text-align: center;
+
+}
+
+#poster p {
+    font-size: 18px;
+    text-align: center;
+    color: #0d0303;
+    position: relative;
+    top: -35px;
+}
+/* Map */
+.map{
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+}
+.map h1{
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+
+/*footer*/
+#imp-links {
+    background-color: rgb(9,90,163);
+    color: white;
+    overflow: auto;
+}
+
+.div33 {
+    width: 33.33%;
+    float: left;
+    padding: 25px 50px;
+    box-sizing: border-box;
+}
+
+.div33 h3 {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 2px;
+    font-weight: normal;
+}
+
+
+#footer-menu {
+    list-style-type: none;
+    padding: 0px;
+    
+}
+
+#footer-menu li {
+    padding-bottom: 10px;
+}
+
+#footer-menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+#footer-menu-container {
+    padding-left: 100px;
+}
+
+
+/*navbar ul #mobile-cross ko hide karna hai  mobile me unhide ho jayega mobile ke liye banayagya hai*/
+.navbar ul #mobile-cross,
+#mobile-bar {
+    display: none;
+}
+
+/* responsive ipad*/
+@media (max-width:768px) {
+    .navbar ul li {
+        padding-right: 20px;
+    }
+
+    .Section70 {
+        padding-right: 30px;
+        box-sizing: border-box;
+    }
+    #poster h1{
+        text-align: center;
+    }
+    #poster p{
+        text-align: center;
+    }
+    
+}
+
+/*responsive mobile*/
+@media (max-width:500px) {
+    #logobar {
+        text-align: center;
+    }
+
+    #poster h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+    #poster p {
+        text-align: center;
+    }
+    .section33 {
+        width: 100%;
+    }
+
+    .Section70 {
+        width: 100%;
+        text-align: center;
+        padding-right: 0px;
+    }
+
+    .section50 {
+        width: 100%;
+    }
+
+    .Section30 {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .div33 {
+        width: 100%;
+        padding: 25px 20px;
+        text-align: center;
+    }
+
+    .section33 a {
+        display: inline-block;
+        margin-bottom: 30px;
+    }
+
+    .section50 h2 {
+        text-align: center;
+        padding-right: 0px;
+    }
+
+    .section50 form {
+        text-align: center;
+    }
+
+    #footer-menu-container {
+        padding-left: 0px;
+    }
+
+    button {
+        position: relative;
+        width: 70px;
+        height: 27px;
+        background: rgb(9,90,163);
+        box-shadow: 0 0 10px rgb(10, 10, 10);
+        font-size: 16px;
+        color: #f9eeee;
+        font-weight: 600;
+        cursor: pointer;
+        border-radius: 30px;
+        border: none;
+        outline: none;
+        bottom: 0px;
+        left: 11%;
+
+
+    }
+
+}
+
+/*mobile menu*/
+@media (max-width:500px) {
+    .navbar {
+        background-color: rgb(9,90,163);
+        position: absolute;
+        top: 0px;
+        height: 100vh;
+        width: 280px;
+        padding: 0px;
+    }
+
+    .navbar ul li {
+        display: block;
+        padding: 18px 0px;
+        padding-right: 35px;
+        border-bottom: 1px solid gainsboro;
+        padding-left: 20px;
+    }
+
+    #mobile-cross {
+        text-align: right;
+    }
+
+    .ri-close-circle-fill {
+        font-size: 25px;
+    }
+
+    .navbar {
+        left: -280px;
+        transition: all 0.5s ease;
+    }
+
+    #mobile-bar {
+        background-color: rgb(9,90,163);
+        color: white;
+        padding: 18px;
+        font-size: 28px;
+    }
+
+    .navbar ul #mobile-cross,
+    #mobile-bar {
+        display: block;
+    }
+
+    .button {
+        position: relative;
+        width: 70px;
+        height: 27px;
+        background: rgb(9,90,163);
+        box-shadow: 0 0 10px rgb(231, 231, 180);
+        font-size: 16px;
+        color: #f9eeee;
+        font-weight: 600;
+        cursor: pointer;
+        border-radius: 30px;
+        border: none;
+        outline: none;
+        bottom: 0px;
+        left: 11%;
+
+
+    }
+}
+
+    
+
+
+  
+ 
