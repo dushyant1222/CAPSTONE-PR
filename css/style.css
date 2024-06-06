@@ -103,11 +103,12 @@ nav.blue ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #ffffff;
+    color: #fbfbfb;
+    border-radius: 20px;
     flex-direction: column;
-    background-color: white;
+    background-color: rgb(199, 227, 247);
     position: relative;
-    width: 60vw ;
+    width: 55vw ;
     margin: auto;
     height: 600px;
     top: 100px;
@@ -135,6 +136,7 @@ nav.blue ul{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 20px;
     color: #080808;
     flex-direction: column;
     background-color: rgb(199, 227, 247);
@@ -175,7 +177,7 @@ nav.blue ul{
 
 
 #why_us .box:hover{
-    background-color: rgb(254, 4, 13);
+    background-color: #2C4C9C;
 }
 
 #teamContainer {
@@ -183,13 +185,14 @@ nav.blue ul{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 20px;
     color: #080808;
     flex-direction: column;
     background-color: rgb(199, 227, 247);
     position: relative;
-    width: auto;
+    width: 50vw;
     margin: auto;
-    height: auto; 
+    height: 85vh; 
     top: 100px;
 }
 
@@ -208,13 +211,15 @@ nav.blue ul{
     padding: 10px;
     margin-bottom: 20px;
     width: 100%;
+    height: 75px;
     max-width: 600px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 #teamContainer .box h2 {
     font-size: 24px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+
 }
 
 #teamContainer .box p {
@@ -222,7 +227,7 @@ nav.blue ul{
 }
 
 #teamContainer .box:hover{
-    background-color: rgb(255, 57, 2);
+    background-color: #2C4C9C;
 }
 
 #poster {
