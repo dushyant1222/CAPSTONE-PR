@@ -13,11 +13,6 @@
     width: 100%;
 }
 
-.leaflet-popup-content {
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-}
-
 
 h1,
 h2,
@@ -150,7 +145,8 @@ nav.blue ul{
     top: 100px;
 }
 
-#why_us h1 {
+#why_us h1
+{
     font-size: 40px;
     color: #0d0303;
     position: fixed 
@@ -203,6 +199,7 @@ nav.blue ul{
     position: fixed 
     text-align: center;
     top: -235px;
+    
 }
 
 #teamContainer .box {
