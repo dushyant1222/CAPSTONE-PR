@@ -90,7 +90,7 @@ window.addEventListener('load', function () {
         { lat: 25.549341, lng: 84.852703 },
         { lat: 25.548507, lng: 84.852149 },
         { lat: 25.547892, lng: 84.851788 },
-        { lat: 25.547920, lng: 84.851791 },
+        { lat: 25.548188, lng: 84.851026 },
         { lat: 25.547585, lng: 84.850638 },
         { lat: 25.547630, lng: 84.850424 },
         { lat: 25.546912, lng: 84.849874 },
@@ -170,6 +170,7 @@ window.addEventListener('load', function () {
     createCustomMarker(25.541135, 84.852614, 'Aryabhatta Hostel, IIT-P');
     createCustomMarker(25.539571, 84.852092, 'CV Raman Hostel, IIT-P');
     createCustomMarker(25.54840783722168, 84.85448145283397, 'Guest House,IITP');
+    createCustomMarker(25.54991548016608, 84.85367052885552, 'Hospital IIT Patna');
     createCustomMarker(25.5451238, 84.8540284, 'Cricket Ground, IIT-P');
     createCustomMarker(25.5547644, 84.8573525, 'IIT PATNA Gate-2');
  
@@ -220,7 +221,7 @@ window.addEventListener('load', function () {
     addInteractiveMarker(map, 25.536739, 84.850675, 'Open Air theature', '');
     addInteractiveMarker(map, 25.540363, 84.850043, 'Basketball court, IIT-P', '');
     addInteractiveMarker(map, 25.537779, 84.850186, 'GHEXT Cafe', '');
-    addInteractiveMarker(map, 25.5383041, 84.8503579, 'Water treatment plant IIT-P', '');
+    addInteractiveMarker(map, 25.538443092151624, 84.85062156815401, 'Water treatment plant IIT-P', '');
     addInteractiveMarker(map, 25.539045, 84.850232, 'Hair Saloon, IIT-P', '');
     addInteractiveMarker(map, 25.5392678, 84.8501515, 'Vollyball court', '');
     addInteractiveMarker(map, 25.539610, 84.850184, 'Tennis court, IIT-P', '');
@@ -243,7 +244,6 @@ window.addEventListener('load', function () {
     addInteractiveMarker(map,25.55153580451047, 84.8592139237162, 'IIT Patna Staff Residence (Block-C2)', '');
     addInteractiveMarker(map, 25.55169318808672, 84.85866432886111, 'C-3 Quarter, Indian Institute of Technology Patna', '');
     addInteractiveMarker(map, 25.551229498248052, 84.85865307435897, 'C-4 Block, Staff Quarters', '');
-    addInteractiveMarker(map, 25.5498334803212, 84.85375510461176, 'Hospital IIT Patna', '');
     addInteractiveMarker(map, 25.55206221136709, 84.85558822416148, 'Foundation Academy School, IIT PatnaCampus, Bihta', '');
     addInteractiveMarker(map, 25.552985128692836, 84.85575398543595, 'Kendriya Vidyalaya, IIT Patna', '');
     addInteractiveMarker(map, 25.55396687490288, 84.8582119236727, 'PATHFINDER STORE', '');
