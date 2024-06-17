@@ -1,5 +1,4 @@
 // Initialize the HERE Map
-
 window.addEventListener('load', function () {
     var platform = new H.service.Platform({
         'apikey': 'gHI3mtdh39r9ucHZKxQyhOJYYVJsFSBE3_4DeHJ9aAs'
@@ -24,15 +23,34 @@ window.addEventListener('load', function () {
 
     // Create the default UI components
     var ui = H.ui.UI.createDefault(map, defaultLayers);
+    
 
-  
+    const mapSettingsControl = ui.getControl('mapsettings');
+    mapSettingsControl.setAlignment('top-left');
+    
+
+    // Step 5: Add the traffic overlay to the map
+    map.addLayer(defaultLayers.vector.traffic.map);
+    // Function to update traffic layer
+    function updateTrafficLayer() {
+        // Get the provider instance from the layer
+        const provider = defaultLayers.vector.traffic.map.getProvider();
+        // Invalidate provider's data and force reload
+        provider.reload(true);
+    }
+
+    // Refresh traffic layer every 1 minute (60 seconds)
+    const refreshInterval = 60 * 1000;
+    setInterval(updateTrafficLayer, refreshInterval);
+
+
     // coordinates of the polygon vertices for IIT Patna boundary
     var iitPatnaBoundary = [
         { lat: 25.534152, lng: 84.843776 },
         { lat: 25.533169, lng: 84.845886 },
         { lat: 25.532869, lng: 84.846386 },
         { lat: 25.532433, lng: 84.847391 },
-        { lat: 25.531740, lng:  84.848953 },
+        { lat: 25.531740, lng: 84.848953 },
         { lat: 25.531326, lng: 84.849918 },
         { lat: 25.530877, lng: 84.851747 },
         { lat: 25.530757, lng: 84.851953 },
@@ -48,9 +66,9 @@ window.addEventListener('load', function () {
         { lat: 25.536693, lng: 84.853509 },
         { lat: 25.536811, lng: 84.853198 },
         { lat: 25.537081, lng: 84.852759 },
-        { lat: 25.537247524929118, lng: 84.85278010745856},
-        { lat: 25.537735, lng:  84.852048 },
-        { lat: 25.537613, lng: 84.851612 },    
+        { lat: 25.537247524929118, lng: 84.85278010745856 },
+        { lat: 25.537735, lng: 84.852048 },
+        { lat: 25.537613, lng: 84.851612 },
         { lat: 25.537912, lng: 84.851339 },
         { lat: 25.537623, lng: 84.850796 },
         { lat: 25.537725, lng: 84.850331 },
@@ -70,7 +88,7 @@ window.addEventListener('load', function () {
         { lat: 25.548283, lng: 84.859461 },
         { lat: 25.551339, lng: 84.861963 },
         { lat: 25.552530, lng: 84.861006 },
-        { lat: 25.553634, lng: 84.860111},
+        { lat: 25.553634, lng: 84.860111 },
         { lat: 25.555274, lng: 84.858785 },
         { lat: 25.554762, lng: 84.857670 },
         { lat: 25.554630, lng: 84.857317 },
@@ -84,7 +102,7 @@ window.addEventListener('load', function () {
         { lat: 25.552333, lng: 84.854870 },
         { lat: 25.551775, lng: 84.854757 },
         { lat: 25.551405, lng: 84.854774 },
-        { lat: 25.550916, lng: 84.854817},
+        { lat: 25.550916, lng: 84.854817 },
         { lat: 25.551175, lng: 84.853360 },
         { lat: 25.550202, lng: 84.853052 },
         { lat: 25.549341, lng: 84.852703 },
@@ -96,7 +114,7 @@ window.addEventListener('load', function () {
         { lat: 25.546912, lng: 84.849874 },
         { lat: 25.545582, lng: 84.849072 },
         { lat: 25.545604, lng: 84.848910 },
-        { lat: 25.544568, lng: 84.848535},
+        { lat: 25.544568, lng: 84.848535 },
         { lat: 25.543361, lng: 84.848036 },
         { lat: 25.542625, lng: 84.847749 },
         { lat: 25.542597, lng: 84.847802 },
@@ -113,8 +131,8 @@ window.addEventListener('load', function () {
         { lat: 25.537266, lng: 84.845306 },
         { lat: 25.536881, lng: 84.845125 },
         { lat: 25.536750, lng: 84.845398 },
-        { lat: 25.535463, lng: 84.844596 }     
-    
+        { lat: 25.535463, lng: 84.844596 }
+
     ];
 
     // Create a polygon and add it to the map
@@ -154,7 +172,7 @@ window.addEventListener('load', function () {
     createCustomMarker(25.535612, 84.852864, 'Auditorium IIT-P');
     createCustomMarker(25.534337, 84.853957, 'Academic Circle IIT-P');
     createCustomMarker(25.533462, 84.851436, 'Lecture Hall IIT-P');
-    createCustomMarker(25.5327023, 84.8517452,'Tutorial Block-9, IIT-P');
+    createCustomMarker(25.5327023, 84.8517452, 'Tutorial Block-9, IIT-P');
     createCustomMarker(25.534275, 84.851432, 'Block-3, IITP');
     createCustomMarker(25.533860, 84.850645, 'Block-6, IIT-P');
     createCustomMarker(25.533607, 84.849933, 'Block-4, IIT-P');
@@ -173,8 +191,8 @@ window.addEventListener('load', function () {
     createCustomMarker(25.54991548016608, 84.85367052885552, 'Hospital IIT Patna');
     createCustomMarker(25.5451238, 84.8540284, 'Cricket Ground, IIT-P');
     createCustomMarker(25.5547644, 84.8573525, 'IIT PATNA Gate-2');
- 
-     
+
+
 
     // Function to add a marker for Small Buildings
     function addInteractiveMarker(map, lat, lng, title, description) {
@@ -241,7 +259,7 @@ window.addEventListener('load', function () {
     addInteractiveMarker(map, 25.54910595175337, 84.85872260229864, 'IIT Patna B4 Appartment', '');
     addInteractiveMarker(map, 25.5488485, 84.8581034, 'Childerens park, IIT-P', '');
     addInteractiveMarker(map, 25.550946883480627, 84.85922330246791, 'Block C1 Appartments', '');
-    addInteractiveMarker(map,25.55153580451047, 84.8592139237162, 'IIT Patna Staff Residence (Block-C2)', '');
+    addInteractiveMarker(map, 25.55153580451047, 84.8592139237162, 'IIT Patna Staff Residence (Block-C2)', '');
     addInteractiveMarker(map, 25.55169318808672, 84.85866432886111, 'C-3 Quarter, Indian Institute of Technology Patna', '');
     addInteractiveMarker(map, 25.551229498248052, 84.85865307435897, 'C-4 Block, Staff Quarters', '');
     addInteractiveMarker(map, 25.55206221136709, 84.85558822416148, 'Foundation Academy School, IIT PatnaCampus, Bihta', '');

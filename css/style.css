@@ -99,38 +99,123 @@ nav.blue ul{
     background: #2C4C9C;
 }
 
+/* About us */
+
 #aboutContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fbfbfb;
+    color: #f8f5f5;
     border-radius: 20px;
     flex-direction: column;
-    background-color: rgb(199, 227, 247);
+    background-color: rgb(191, 225, 249);
     position: relative;
-    width: 55vw ;
+    width: 55vw;
     margin: auto;
-    height: 600px;
+    padding: 20px;
     top: 100px;
 }
 
 #aboutContainer h1 {
     font-size: 50px;
     color: #0d0303;
-    position: relative ;
     text-align: center;
-    top: -235px;
+}
 
+#aboutContainer h2 {
+    font-size: 30px;
+    color: #0d0303;
+    margin-top: 20px;
 }
 
 #aboutContainer p {
     font-size: 18px;
-    text-align: center;
+    text-align: justify;
     color: #0d0303;
-    position: relative;
-    top: -200px;
+    margin-top: 10px;
 }
 
+/* Contact us */
+
+#ContactUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    color: #0d0303;
+    border-radius: 20px;
+    background-color: rgb(169, 209, 237);
+    padding: 20px;
+    margin: 50px auto;
+    width: 55vw;
+}
+
+
+
+#ContactUs h1 {
+    font-size: 40px;
+    color: #0d0303;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-info p, .contact-details p {
+    font-size: 18px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: #2C4C9C;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+.contact-form label {
+    font-size: 16px;
+    color: #0d0303;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #f7f4f4;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2C4C9C;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #1b336e;
+}
+
+
+
+/* Why us */
 #why_us {
     margin-top: 50px;
     display: flex;
@@ -164,6 +249,7 @@ nav.blue ul{
     width: 100%;
     max-width: 600px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
 #why_us .box h2 {
@@ -224,6 +310,8 @@ nav.blue ul{
     display: none; 
 }
 
+/* Team section */
+
 #teamContainer {
     margin-top: 50px;
     display: flex;
@@ -238,6 +326,7 @@ nav.blue ul{
     margin: auto;
     height: 85vh; 
     top: 100px;
+    transition: all 0.3s ease;
 }
 
 #teamContainer h1 {
@@ -258,6 +347,7 @@ nav.blue ul{
     height: 75px;
     max-width: 600px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
 #teamContainer .box h2 {
@@ -272,6 +362,8 @@ nav.blue ul{
 
 #teamContainer .box:hover{
     background-color: #2C4C9C;
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 #poster {
