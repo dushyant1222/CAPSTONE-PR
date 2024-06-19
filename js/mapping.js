@@ -42,6 +42,7 @@ window.addEventListener('load', function () {
     // Refresh traffic layer every 1 minute (60 seconds)
     const refreshInterval = 60 * 1000;
     setInterval(updateTrafficLayer, refreshInterval);
+    
 
 
     // coordinates of the polygon vertices for IIT Patna boundary
@@ -149,6 +150,8 @@ window.addEventListener('load', function () {
         }
     });
     map.addObject(polygon);
+
+    
 
 
     // Main Buildings marker with over Text
@@ -267,4 +270,3 @@ window.addEventListener('load', function () {
     addInteractiveMarker(map, 25.55396687490288, 84.8582119236727, 'PATHFINDER STORE', '');
 
 });
-
